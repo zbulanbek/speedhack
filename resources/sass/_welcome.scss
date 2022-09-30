@@ -1,0 +1,615 @@
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+.welcome-banner{
+	background-image: url('/images/bg/banner-1.jpg');
+	width: 100%;
+	height: 100%;
+	background-position: top right;
+    background-size: cover;
+	.wrap{
+		display: flex;
+		align-items: center;
+	}
+
+	.banner-img{
+	width: 50%;
+	height: 600px;
+		img{
+			width: 100%;
+		    height: 100%;
+		    object-fit: contain;
+		}
+	}
+}
+
+.welcome-banner .content-banner{
+	width: 50%;
+	.title{
+		font-family: 'Inter', sans-serif;
+		font-weight: bold;
+		font-size: 42px;
+		line-height: 58px;
+		margin-bottom: 32px;
+		color: #fff;
+	}
+	.subtile{
+		font-family: 'Inter', sans-serif;
+		font-size: 20px;
+		display: inline-block;
+		line-height: 36px;
+		color: #fff;
+		margin-bottom: 38px;
+		opacity: 0.7;
+	}
+
+	.button-wrap{
+		display: flex;
+		align-items: center;
+		.btn-main{
+			margin-right: 32px;
+		}
+	}
+}
+.link-main:hover{
+	cursor: pointer;
+}
+
+/* Tab Course */
+.tab-course{
+	margin-bottom: 60px;
+}
+.tab-course .nav-tabs{
+	display: flex;
+    justify-content: center;
+    width: 100%;
+    border: none;
+}
+
+.tab-course .nav-tabs .nav-link{
+	border:none;
+	padding: 20px 40px;
+	border-bottom: 2px solid #CECECE;
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: center;
+	color: #BBBBBB;
+}
+
+
+.tab-course .nav-tabs .nav-link img{
+	margin-right: 6px;
+}
+
+.tab-course .nav-tabs .nav-link.active,
+.tab-course .nav-tabs .nav-item.show .nav-link{
+	border-color: #F2994A;
+	color: #050A1C;
+}
+
+.bg-yellow{
+	background-image: url('/images/bg/yellow-bg.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
+    background-size: cover;
+    padding: 10px 0px;
+}
+
+.arrow-slider{
+	background-color: transparent;
+	border:none;
+	&.right{
+		transform: rotate(180deg);
+		margin-left: 10px;
+	}
+	&.left{
+		margin-right: 10px;
+	}
+}
+
+.course .progress .progress-bar{
+	background-color: #F8CC45;
+}
+
+.tab-course .nav-tabs .nav-link{
+	display: flex;
+	align-items: center;
+}
+
+button:active{
+	outline: none !important;
+	box-shadow: none  !important;
+}
+button:focus{
+	outline: none !important;
+}
+
+.empty-wrap{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.title{
+		font-size: 22px;
+		font-family: 'Inter', sans-serif;
+		margin-bottom: 24px;
+	}
+	.btn-main{
+		padding: 12px 38px;
+	}
+}
+
+.class-carousel-wrap .slick-prev, .class-carousel-wrap .slick-next{
+   top: -30px;
+   display: flex;
+   align-items: center;
+}
+.class-carousel-wrap .slick-prev::after{
+   	content: 'Предыдущий';
+   	font-size: 16px;
+   	color: #1680E2;
+   	background-image: url('/images/icons/chevron-left.svg');
+   	background-repeat: no-repeat;
+   	background-position: top left;
+   	padding-left: 20px;
+}
+.class-carousel-wrap .slick-prev::before{
+	display: none;
+}
+
+
+
+.class-carousel-wrap .slick-next::after{
+  	content: 'Следующий';
+
+   	font-size: 16px;
+   	color: #1680E2;
+   	background-image: url('/images/icons/chevron-left1.svg');
+   	background-repeat: no-repeat;
+   	background-position: top right;
+   	padding-right: 20px;
+}
+.class-carousel-wrap .slick-next::before{
+	display: none;
+}
+
+
+
+.class-carousel-wrap .slick-prev.slick-disabled:after, .class-carousel-wrap .slick-next.slick-disabled:after{
+	display: none;
+	opacity: 0;
+}
+.class-carousel-wrap .slick-prev.slick-disabled, .class-carousel-wrap .slick-next.slick-disabled{
+	display: none;
+}
+.class-carousel-wrap .slick-next{
+	right: 96px;
+}
+.class-carousel-wrap .slick-prev{
+  	left: 0px;
+}
+.week-slider .slick-prev, .week-slider .slick-next{
+	z-index: 20px;
+}
+.week-slider .slick-prev::after{
+	content: "dwe";
+	background-image: url('/images/icons/chevron-left.svg');
+   	background-repeat: no-repeat;
+   	background-position: top left;
+   	background: red;
+
+}
+.week-slider .slick-prev::before{
+	display: none;
+}
+.week-slider .slick-next::before{
+	display: none;
+}
+.week-slider .slick-next::after{
+	content: "edwde";
+   	background-image: url('/images/icons/chevron-left1.svg');
+   	background-repeat: no-repeat;
+   	background-position: top right;
+}
+
+.week-slider.slick-prev.slick-disabled{
+	display: none;
+}
+
+.week-slider.slick-next.slick-disabled{
+	display: none;
+}
+
+.vc-arrow{
+	background: rgba(208, 208, 208, 0.56);
+	border-radius: 12px !important;
+	padding: 0px 4px;
+}
+
+.vc-header{
+	padding: 20px 20px 18px !important;
+}
+
+.vc-arrows-container{
+	padding: 20px 20px !important;
+}
+
+.tab-course-account .tab-content{
+		margin-left: 60px;
+    	margin-right: 60px;
+	}
+.tab-course-account .nav-tabs .nav-link{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.tab-course-account .nav-tabs .nav-link.active, .tab-course-account .nav-tabs .nav-item.show .nav-link{
+	background-color: transparent;
+}
+
+.tab-course-account .nav-tabs{
+	justify-content: left;
+	padding-left: 60px;
+	padding-right: 60px;
+	width: auto;
+	border-bottom: 1px solid #E0E3EB;
+}
+.tab-course-account .nav-tabs .nav-link{
+	padding: 10px 2px;
+    margin-right: 30px;
+}
+
+.btn-main:hover{
+	cursor: pointer;
+}
+
+
+.vc-weekday{
+	border: 1px solid #C4C4C4;
+    margin: 10px;
+    border-radius: 5px;
+    line-height: 14px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    color: #2C2D32 !important;
+}
+
+.links-item{
+	padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.vc-arrows-container .vc-arrow:first-child{
+	background: #F2994A;
+}
+
+.vc-arrows-container .vc-arrow:first-child .vc-svg-icon path{
+	fill: #fff !important;
+}
+
+.vc-day{
+	min-height: 62px !important;
+}
+
+.invalid-feedback{
+	display: block;
+}
+
+.plyr--full-ui input[type=range]{
+	color: #F2994A !important;
+}
+.plyr__control--overlaid{
+	background:  #F2994A !important;
+}
+
+.vm--modal{
+	overflow-y: auto !important;
+}
+
+.test-wrap .slick-slider{
+	height: 100%;
+}
+.test-wrap .class-carousel-wrap .slick-prev,
+.test-wrap .class-carousel-wrap .slick-next{
+	bottom: 16px;
+	top: inherit;
+	width: inherit;
+}
+
+.test-wrap .class-carousel-wrap .slick-prev{
+	left: 16px;
+}
+
+.test-wrap .class-carousel-wrap .slick-next{
+	right: 16px;
+}
+
+.test-wrap .class-carousel-wrap{
+	height: 100%;
+}
+
+.test-wrap .class-carousel-wrap .slick-slider{
+	height: 100%;
+}
+
+.test-wrap .class-carousel-wrap{
+	padding-top: 0px !important;
+}
+
+.test-wrap .text-test{
+	padding-top: 16px;
+}
+
+.test-wrap .class-carousel-wrap .slick-prev::after{
+   	content: 'Предыдущий';
+   	font-size: 16px;
+   	color: #333;
+   	background-image: url('/images/icons/chevron-left-black.svg');
+   	background-repeat: no-repeat;
+   	background-position: center left 5px;
+   	background-color: #F2994A;
+    border-radius: 12px;
+   	display: block;
+   	padding: 14px 10px;
+    line-height: 14px;
+    padding-left: 30px;
+    background-color: rgba(208, 208, 208, 0.56);
+	border-radius: 12px;
+}
+.class-carousel-wrap .slick-prev::before{
+	display: none;
+}
+
+.test-wrap .class-carousel-wrap .slick-next::after{
+  	content: 'Следующий';
+   	font-size: 16px;
+   	color: #fff;
+   	background-image: url('/images/icons/chevron-right-white.svg');
+   	background-repeat: no-repeat;
+   	background-position: center right 5px;
+   	padding-right: 20px;
+   	background-color: #F2994A;
+    border-radius: 12px;
+    display: block;
+   	padding: 14px 10px;
+   	padding-right: 30px;
+    line-height: 14px;
+}
+.test-wrap .class-carousel-wrap .slick-next::before{
+	display: none;
+}
+
+.test-wrap .class-carousel-wrap .slick-prev.slick-disabled:after, .class-carousel-wrap .slick-next.slick-disabled:after{
+	display: none;
+	opacity: 0;
+}
+.test-wrap .class-carousel-wrap .slick-prev.slick-disabled, .class-carousel-wrap .slick-next.slick-disabled{
+	display: none;
+}
+
+.carousel-item {
+    height: 520px;
+}
+
+.test-wrap .carousel-item {
+	border-top-left-radius: 0px !important;
+}
+.test-wrap .carousel-item .title-lesson{
+	border-top-left-radius: 0px !important;
+}
+.trial-lesson .close-btn{
+	display: none;
+}
+
+.trial-lesson .test-wrap{
+	padding-top: 0px !important;
+}
+
+.radio-wrap div{
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.radio-wrap div .radio{
+	margin-right: 20px;
+}
+
+
+.metodist-checkbox-wrap .custom-control-label{
+	color: #003ECB;
+	text-align: center;
+	font-size: 16px;
+	padding: 7px 16px;
+	border-radius: 100px;
+	border: 1px solid #003ECB;
+	margin-bottom: 16px;
+
+}
+
+.metodist-checkbox-wrap .custom-control-inline{
+	padding: 0px;
+}
+.metodist-checkbox-wrap .custom-control-label:after,
+.metodist-checkbox-wrap .custom-control-label:before{
+	display: none;
+}
+//.custom-control-input:checked ~ .custom-control-label{
+//	background: #003ECB;
+//	color: #fff;
+//}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #fff;
+    border-color: #3BA972;
+    background-color: #3BA972;
+}
+
+// mode
+.vuecal__flex.vuecal.vuecal--week-view{
+	border-radius: 10px;
+}
+.vuecal__flex .vuecal__header .vuecal__flex.vuecal__menu{
+	display: none;
+}
+
+.vuecal__flex .vuecal__header .vuecal__title-bar{
+	display: none;
+}
+
+.vuecal__flex.weekday-label span:last-child{
+	display: none;
+	color: green;
+}
+
+
+.vuecal__no-event{
+	display: none;
+}
+
+//red line
+.vuecal__now-line{
+	display: none;
+}
+
+.vuecal__event{
+	border-radius: 10px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vuecal__event.monday-mode{
+	background: rgba(252, 191, 41, 0.5);
+}
+
+.vuecal__event.tuesday-mode{
+	background: #EBE7FF;
+}
+
+.vuecal__event.wednesday-mode{
+	background: rgba(73, 191, 95, 0.5);
+}
+
+.vuecal__event.thursday-mode{
+	background: #57D0FF;
+}
+
+.vuecal__event.friday-mode{
+	background: rgba(98, 156, 244, 0.5);
+}
+
+.vuecal__event.saturday-mode{
+	background: #F8EC3A;;
+}
+
+.vuecal__event.sunday-mode{
+	background: rgba(252, 191, 41, 0.5);
+}
+
+.vue__time-picker input.display-time{
+	width: 100%;
+    height: 100%;
+    padding: 0px;
+border: none !important;
+}
+
+.vue__time-picker .clear-btn{
+	padding-right: 16px !important;
+}
+
+.vue__time-picker-dropdown .hint, .vue__time-picker .dropdown .hint{
+	display: none !important;
+}
+
+.vue__time-picker-dropdown ul li:not([disabled]).active, .vue__time-picker-dropdown ul li:not([disabled]).active:focus, .vue__time-picker-dropdown ul li:not([disabled]).active:hover, .vue__time-picker .dropdown ul li:not([disabled]).active, .vue__time-picker .dropdown ul li:not([disabled]).active:focus, .vue__time-picker .dropdown ul li:not([disabled]).active:hover{
+	background: #F2994A !important;
+}
+
+
+@media only screen and (min-width: 1600px) {
+    .trial-lesson .carousel-item{
+        height: 50% !important;
+        margin-bottom: 100px !important;
+    }
+}
+
+@media (min-width: 1200px){
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        max-width: 1340px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .trial-lesson .test-wrap{
+        padding-top: 20px !important;
+    }
+    .welcome-banner{
+        .wrap{
+            position: relative;
+            padding-bottom: 100px;
+            padding-top: 30px;
+        }
+        .banner-img{
+            width: 130px;
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            height: 130px;
+        }
+        .link-main{
+            margin-top: 20px;
+        }
+    }
+    .welcome-banner .content-banner{
+        width: 100%;
+        .title{
+            font-size: 32px;
+            line-height: 38px;
+        }
+        .button-wrap{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    .tab-course-account {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .tab-course-account .tab-course .nav-tabs{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .tab-course-account .nav-tabs{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-left: 20px;
+    }
+    .tab-course-account .tab-content{
+        margin: 0px;
+    }
+
+     .tab-course-account .tab-content{
+        margin-left: 0px;
+        margin-right: 0px
+    }
+}
+
+.bg-account {
+	height: 100%;
+}
+
+@media (min-width: 1200px){
+	.container-xl, .container-lg, .container-md, .container-sm, .container {
+	    max-width: 1180px;
+	}	
+}
+

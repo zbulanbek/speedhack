@@ -1,0 +1,18 @@
+// Write (or import) your styles 
+
+.vue__time-picker .clear-btn{
+	padding-right: 16px !important;
+}
+
+.vue__time-picker-dropdown .hint, .vue__time-picker .dropdown .hint{
+	display: none !important;
+}
+
+.vue__time-picker-dropdown ul li:not([disabled]).active, .vue__time-picker-dropdown ul li:not([disabled]).active:focus, .vue__time-picker-dropdown ul li:not([disabled]).active:hover, .vue__time-picker .dropdown ul li:not([disabled]).active, .vue__time-picker .dropdown ul li:not([disabled]).active:focus, .vue__time-picker .dropdown ul li:not([disabled]).active:hover{
+	background: #F2994A !important;
+}
+
+.vue__time-picker input.display-time{
+	height: 2.6em;
+	border-radius: 5px;
+}
